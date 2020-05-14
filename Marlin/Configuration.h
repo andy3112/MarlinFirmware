@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 23.16
-  #define DEFAULT_Ki 1.89
-  #define DEFAULT_Kd 71.03
+  #define DEFAULT_Kp 21.53
+  #define DEFAULT_Ki 2.01
+  #define DEFAULT_Kd 57.76
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -730,7 +730,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 143.07 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93.0 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -956,7 +956,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 28.5, 3.5, -3.45 }
+#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5.0, -3.45 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1057,7 +1057,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 
 // @section extruder
