@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
-  #define DEFAULT_Kp 21.53
-  #define DEFAULT_Ki 2.01
-  #define DEFAULT_Kd 57.76
+  #define DEFAULT_Kp 23.82
+  #define DEFAULT_Ki 2.43
+  #define DEFAULT_Kd 58.41
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -956,7 +956,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5.0, -3.45 }
+#define NOZZLE_TO_PROBE_OFFSET { 32.5, 5.0, -3.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1096,7 +1096,7 @@
 #define Y_BED_SIZE 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -10.5
+#define X_MIN_POS -7
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
